@@ -5,11 +5,13 @@ using UnityEngine;
 
 public class BulletMove : MonoBehaviour
 {
+    public float DestoryPos=10.0f;
 
     private float BulletSpeed;
     private bool BullArrow = true;
-    public float DestoryPos=10.0f;
     private Vector2 OriginPos;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,11 +46,19 @@ public class BulletMove : MonoBehaviour
             transform.Translate(Vector2.right * 5.0f * Time.deltaTime);
            
         }
-
         //총알 지우는 건 나중에....
     }
 
-    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("Wall"))
+        {
+            //알아서 지워라.
+            gameObject.SetActive(false);
+        }
+    }
+
+
 
 
 

@@ -104,9 +104,6 @@ public class MovePlayer : MonoBehaviour
             jumplimit = 1;
         }
     }
-
-  
-
     
 
 }

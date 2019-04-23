@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5628559013212209363}
   - component: {fileID: 6037531455664849147}
   - component: {fileID: 2985840277354664019}
+  - component: {fileID: 8266368757904805315}
   m_Layer: 8
   m_Name: Bullet
   m_TagString: Untagged
@@ -70,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 456a5c008ce5f4947b2fdf1094615769, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -155,3 +156,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.042242616, y: 0.056213744}
   m_EdgeRadius: 0
+--- !u!114 &8266368757904805315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869125490690554990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b592345ae60ef744b6bc9a96ac32cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DestoryPos: 10
